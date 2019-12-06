@@ -13,6 +13,9 @@ E:\StudyPal\StudyPal\bin\Debug\EntityFramework.dll
 E:\StudyPal\StudyPal\bin\Debug\EntityFramework.SqlServer.dll
 E:\StudyPal\StudyPal\bin\Debug\EntityFramework.xml
 E:\StudyPal\StudyPal\bin\Debug\EntityFramework.SqlServer.xml
-E:\StudyPal\StudyPal\obj\Debug\StudyPal.Migrations.firstmigration.resources
 E:\StudyPal\StudyPal\obj\Debug\StudyPal.View.HomeView.resources
 E:\StudyPal\StudyPal\obj\Debug\StudyPal.View.SignUpView.resources
+E:\StudyPal\StudyPal\obj\Debug\StudyPal.View.LogIn.resources
+E:\StudyPal\StudyPal\obj\Debug\StudyPal.View.UserProfile.resources
+E:\StudyPal\StudyPal\obj\Debug\StudyPal.View.BaseView.resources
+E:\StudyPal\StudyPal\obj\Debug\StudyPal.View.SkillView.resources

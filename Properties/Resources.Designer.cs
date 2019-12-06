@@ -73,6 +73,16 @@ namespace StudyPal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chevron_right_48px {
+            get {
+                object obj = ResourceManager.GetObject("chevron_right_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap content_save_1_ {
             get {
                 object obj = ResourceManager.GetObject("content-save(1)", resourceCulture);
@@ -86,6 +96,26 @@ namespace StudyPal.Properties {
         internal static System.Drawing.Bitmap content_save_2_ {
             get {
                 object obj = ResourceManager.GetObject("content-save(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_48px {
+            get {
+                object obj = ResourceManager.GetObject("search_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap student_male_48px {
+            get {
+                object obj = ResourceManager.GetObject("student_male_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

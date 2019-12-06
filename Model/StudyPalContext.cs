@@ -7,10 +7,20 @@ using System.Threading.Tasks;
 
 namespace StudyPal.Model
 {
-    class StudyPalContext : DbContext
+    public class StudyPalContext : DbContext
     {
-        public StudyPalContext() : base("name=studyPalDb") { }
+        public StudyPalContext() : base("name=StudyPalDb")
+        {
+            Database.SetInitializer(new StudyPalDbInitializer());
+            Database.Initialize(true);
+        }
 
-        public DbSet<Course> CourseList { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Course> Courses { get; set; }
+        public virtual DbSet<Payment> Payments{ get; set; }
+        public virtual DbSet<Skill> Skills { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Teacher> Teachers { get; set; }
+        public virtual DbSet<TuitionRequest> TuitionRequests { get; set; }
     }
 }

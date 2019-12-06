@@ -29,38 +29,62 @@
         private void InitializeComponent()
         {
             this.searchCourseComboBox = new System.Windows.Forms.ComboBox();
-            this.btnGo = new MaterialSkin.Controls.MaterialFlatButton();
+            this.logInBtn = new MaterialSkin.Controls.MaterialFlatButton();
+            this.signUpBtn = new MaterialSkin.Controls.MaterialFlatButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.goPBtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.goPBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // searchCourseComboBox
             // 
-            this.searchCourseComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchCourseComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.searchCourseComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.searchCourseComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchCourseComboBox.ForeColor = System.Drawing.Color.LightGray;
             this.searchCourseComboBox.FormattingEnabled = true;
             this.searchCourseComboBox.Location = new System.Drawing.Point(221, 204);
             this.searchCourseComboBox.Name = "searchCourseComboBox";
-            this.searchCourseComboBox.Size = new System.Drawing.Size(322, 33);
+            this.searchCourseComboBox.Size = new System.Drawing.Size(322, 32);
             this.searchCourseComboBox.TabIndex = 1;
             this.searchCourseComboBox.SelectedIndexChanged += new System.EventHandler(this.searchCourseComboBox_SelectedIndexChanged);
             // 
-            // btnGo
+            // logInBtn
             // 
-            this.btnGo.AutoSize = true;
-            this.btnGo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGo.Depth = 0;
-            this.btnGo.Icon = null;
-            this.btnGo.Location = new System.Drawing.Point(550, 204);
-            this.btnGo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGo.Name = "btnGo";
-            this.btnGo.Primary = false;
-            this.btnGo.Size = new System.Drawing.Size(40, 36);
-            this.btnGo.TabIndex = 2;
-            this.btnGo.Text = "Go";
-            this.btnGo.UseVisualStyleBackColor = true;
-            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            this.logInBtn.AutoSize = true;
+            this.logInBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logInBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.logInBtn.Depth = 0;
+            this.logInBtn.Icon = null;
+            this.logInBtn.Location = new System.Drawing.Point(310, 246);
+            this.logInBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.logInBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.logInBtn.Name = "logInBtn";
+            this.logInBtn.Primary = false;
+            this.logInBtn.Size = new System.Drawing.Size(64, 36);
+            this.logInBtn.TabIndex = 4;
+            this.logInBtn.Text = "Log In";
+            this.logInBtn.UseVisualStyleBackColor = false;
+            this.logInBtn.Click += new System.EventHandler(this.logInBtn_Click);
+            // 
+            // signUpBtn
+            // 
+            this.signUpBtn.AutoSize = true;
+            this.signUpBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.signUpBtn.Depth = 0;
+            this.signUpBtn.Icon = null;
+            this.signUpBtn.Location = new System.Drawing.Point(397, 246);
+            this.signUpBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.signUpBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.signUpBtn.Name = "signUpBtn";
+            this.signUpBtn.Primary = false;
+            this.signUpBtn.Size = new System.Drawing.Size(73, 36);
+            this.signUpBtn.TabIndex = 5;
+            this.signUpBtn.Text = "Sign Up";
+            this.signUpBtn.UseVisualStyleBackColor = true;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
             // label1
             // 
@@ -73,37 +97,30 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Study Pal";
             // 
-            // materialFlatButton1
+            // goPBtn
             // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(310, 246);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(64, 36);
-            this.materialFlatButton1.TabIndex = 4;
-            this.materialFlatButton1.Text = "Log In";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.goPBtn.BackColor = System.Drawing.Color.White;
+            this.goPBtn.Image = global::StudyPal.Properties.Resources.chevron_right_48px;
+            this.goPBtn.Location = new System.Drawing.Point(549, 204);
+            this.goPBtn.Name = "goPBtn";
+            this.goPBtn.Size = new System.Drawing.Size(35, 33);
+            this.goPBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.goPBtn.TabIndex = 7;
+            this.goPBtn.TabStop = false;
+            this.goPBtn.Click += new System.EventHandler(this.goPBtn_Click);
+            this.goPBtn.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
+            this.goPBtn.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
             // 
-            // materialFlatButton2
+            // pictureBox1
             // 
-            this.materialFlatButton2.AutoSize = true;
-            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Icon = null;
-            this.materialFlatButton2.Location = new System.Drawing.Point(397, 246);
-            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = false;
-            this.materialFlatButton2.Size = new System.Drawing.Size(73, 36);
-            this.materialFlatButton2.TabIndex = 5;
-            this.materialFlatButton2.Text = "Sign Up";
-            this.materialFlatButton2.UseVisualStyleBackColor = true;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.pictureBox1.Image = global::StudyPal.Properties.Resources.student_male_48px;
+            this.pictureBox1.Location = new System.Drawing.Point(61, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // HomeView
             // 
@@ -111,13 +128,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.materialFlatButton2);
-            this.Controls.Add(this.materialFlatButton1);
+            this.Controls.Add(this.goPBtn);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.signUpBtn);
+            this.Controls.Add(this.logInBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnGo);
             this.Controls.Add(this.searchCourseComboBox);
             this.Name = "HomeView";
             this.Text = "Home";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing);
+            this.Load += new System.EventHandler(this.HomeView_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.goPBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,9 +147,10 @@
 
         #endregion
         private System.Windows.Forms.ComboBox searchCourseComboBox;
-        private MaterialSkin.Controls.MaterialFlatButton btnGo;
+        private MaterialSkin.Controls.MaterialFlatButton logInBtn;
+        private MaterialSkin.Controls.MaterialFlatButton signUpBtn;
         private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox goPBtn;
     }
 }
